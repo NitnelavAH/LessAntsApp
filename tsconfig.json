@@ -2,6 +2,7 @@
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "compileOnSave": false,
+  
   "compilerOptions": {
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -12,7 +13,8 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "module": "preserve"
+    "module": "preserve",
+    "strict": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

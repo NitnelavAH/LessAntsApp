@@ -3,9 +3,7 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "schematicCollections": [
-      "@ionic/angular-toolkit"
-    ]
+    "schematicCollections": ["angular-eslint", "@ionic/angular-toolkit"]
   },
   "newProjectRoot": "projects",
   "schematics": {
@@ -152,6 +150,13 @@
             "production": {
               "browserTarget": "LessAntsApp:build:production"
             }
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"],
+            "maxWarnings": 0
           }
         }
       }
